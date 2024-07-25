@@ -1,0 +1,58 @@
+
+.previewWrap {
+    max-width: 800px;
+    margin: 1.25rem auto;
+    min-height: 200px;
+    overflow-wrap: break-word;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    background-color: #4aa3a3;
+    padding: 0.3rem;
+    border: 1px solid #1d2f2f;
+    box-shadow: 1px 1px 10px 2px #3a5f5f;
+    font-family: Russo One;
+    font-size: 1rem;
+    color: black;
+}
+
+.toolbar i {
+    width: 25px;
+    margin-left: 5px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.faFreeCodeCamp {
+    margin-right: 3px;
+}
+
+.faFreeCodeCamp:before {
+    content: "\f2c5";
+}
+
+.toolbar .faArrowsAlt {
+    margin-left: auto;
+}
+
+.faArrowsAlt:hover {
+    color: #57e2b1;
+    cursor: pointer;
+}
+
+.faArrowsAlt:before {
+    content: "\f0b2";
+}
+
+#preview {
+    padding: 0 1rem;
+}
