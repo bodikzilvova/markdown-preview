@@ -16,7 +16,7 @@
     color: black;
 }
 
-.editorWrap .toolbar {
+.editorWrapper .toolbar {
     width: 99%;
 }
 
@@ -55,14 +55,19 @@
     content: "\f0b2";
 }
 
-.editorWrap textarea {
+.editorWrapper textarea {
     width: 99%;
     min-height: 200px;
     margin-bottom: -5px;
-    resize: vertical;
+    resize: vertical; 
     outline: none;
     padding-left: 5px;
     padding-top: 5px;
     font-size: 0.875rem;
+
+    background-color: #c0d8d8;
+    border: 1px solid #1d2f2f;
+    box-shadow: 1px 1px 10px 2px #3a5f5f;
+    border-top: none;
 }
 

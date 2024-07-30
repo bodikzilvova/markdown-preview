@@ -1,18 +1,29 @@
-import styles from "./PreviewWrapper.module.css"
+import { useSelector } from "react-redux";
+import styles from "./PreviewWrapper.module.css";
+import { marked } from "marked";
 
-export const PreviewWrapper = ()=> {
-    return <div className={styles.previewWrap}>
+export const PreviewWrapper = () => {
+  const markdown = useSelector((state) => state.markdown);
 
-<div className={styles.toolbar}>
+  return (
+    <div className={styles.previewWrap}>
+      <div className={styles.toolbar}>
+        <i
+          className={`${styles.fa} ${styles.faFreeCodeCamp}`}
+          title="no-stuck-dub-sack"
+        ></i>
+        Editor
+        <i
+          className={`${styles.fa} ${styles.faArrowsAlt}`}
+          title="no-stuck-dub-sack"
+        ></i>
+      </div>
 
-<i className={`${styles.fa} ${styles.faFreeCodeCamp}`} title="no-stuck-dub-sack"></i>
-Editor
-<i className={`${styles.fa} ${styles.faArrowsAlt}`} title="no-stuck-dub-sack"></i>
-</div>
-
-<textarea id="preview" type="text"></textarea>
-
-
-
+      <div
+        id="preview"
+        type="text"
+        dangerouslySetInnerHTML={{ __html: marked(markdown) }}
+      ></div>
     </div>
-}
+  );
+};
