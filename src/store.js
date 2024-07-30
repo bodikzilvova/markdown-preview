@@ -2,12 +2,25 @@ import { createStore } from "redux";
 
 const SET_MARKDOWN = "SET_MARKDOWN";
 
+const TOGGLE_EDITOR_EXPAND = "TOGGLE_EDITOR_EXPAND";
+const TOGGLE_PREVIEW_EXPAND = "TOGGLE_PREVIEW_EXPAND";
+
 export const setMarkdown = (markdown) => ({
   type: SET_MARKDOWN,
   payload: markdown,
 });
 
+export const toggleEditorExpand = () => ({
+  type: TOGGLE_EDITOR_EXPAND,
+});
+
+export const togglePreviewExpand = () => ({
+  type: TOGGLE_PREVIEW_EXPAND,
+});
+
 const initialState = {
+  isEditorExpanded: false,
+  isPreviewExpanded: false,
   markdown: `# Welcome to my React Markdown Previewer!
     
   ## This is a sub-heading...
@@ -59,6 +72,18 @@ const markdownReducer = (state = initialState, action) => {
       return {
         ...state,
         markdown: action.payload,
+      };
+    case TOGGLE_EDITOR_EXPAND:
+      return {
+        ...state,
+        isEditorExpanded: !state.isEditorExpanded,
+        isPreviewExpanded: false,
+      };
+    case TOGGLE_PREVIEW_EXPAND:
+      return {
+        ...state,
+        isPreviewExpanded: !state.isPreviewExpanded,
+        isEditorExpanded: false,
       };
     default:
       return state;
