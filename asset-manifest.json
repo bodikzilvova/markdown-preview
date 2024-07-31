@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/bodikzilvova.github.io/markdown-preview/static/css/main.a50e45cb.css",
-    "main.js": "/bodikzilvova.github.io/markdown-preview/static/js/main.b0846c5f.js",
-    "index.html": "/bodikzilvova.github.io/markdown-preview/index.html",
-    "main.a50e45cb.css.map": "/bodikzilvova.github.io/markdown-preview/static/css/main.a50e45cb.css.map",
-    "main.b0846c5f.js.map": "/bodikzilvova.github.io/markdown-preview/static/js/main.b0846c5f.js.map"
+    "main.css": "/markdown-preview/static/css/main.a50e45cb.css",
+    "main.js": "/markdown-preview/static/js/main.b0846c5f.js",
+    "index.html": "/markdown-preview/index.html",
+    "main.a50e45cb.css.map": "/markdown-preview/static/css/main.a50e45cb.css.map",
+    "main.b0846c5f.js.map": "/markdown-preview/static/js/main.b0846c5f.js.map"
   },
   "entrypoints": [
     "static/css/main.a50e45cb.css",
